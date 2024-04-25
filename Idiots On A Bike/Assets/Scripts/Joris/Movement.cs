@@ -6,11 +6,11 @@ public class Movement : MonoBehaviour
 {
     public GameObject fiets;
     public Vector3 mov;
-    public float hor;
-    public float vert;
+    public Vector3 rot;
     public float speed;
     public float Acc;
     public float sence;
+    
 
 
     void Start()
@@ -20,6 +20,13 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
+        rot.y = Input.GetAxis("Horizontal");
+        mov.z = speed;
+
+        
         transform.Translate(mov * Time.deltaTime);
+        transform.Rotate(rot * sence * Time.deltaTime);
+
+        
     }
 }
