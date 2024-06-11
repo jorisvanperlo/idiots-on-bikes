@@ -6,6 +6,8 @@ TagManager:
   tags:
   - LeftWall
   - RightWall
+  - LeftTurn
+  - RightTurn
   layers:
   - Default
   - TransparentFX
