@@ -10,6 +10,12 @@ public class StartRace : MonoBehaviour
     public Behaviour camHolder;
     public Behaviour start;
 
+    public Behaviour P1FWheel;
+    public Behaviour P1BWheel;
+
+    public Behaviour P2FWheel;
+    public Behaviour P2BWheel;
+
     void Update()
     {
         timer += 1.0f * Time.deltaTime;
@@ -19,6 +25,11 @@ public class StartRace : MonoBehaviour
           fiets.enabled = true;
           cam.enabled = true;
           camHolder.enabled = true;
+          P1FWheel.enabled = true;
+          P1BWheel.enabled = true;
+          P2FWheel.enabled = true;
+          P2BWheel.enabled = true;
+
           start.enabled = false;
         }
     }
