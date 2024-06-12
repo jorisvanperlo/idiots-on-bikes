@@ -680,6 +680,34 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1579902945}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &174743326 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 61b6b410d021cd442b74f8c4dfdaf09f,
+    type: 3}
+  m_PrefabInstance: {fileID: 243434317}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &174743330
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174743326}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5864320914214940941, guid: 61b6b410d021cd442b74f8c4dfdaf09f, type: 3}
 --- !u!1 &191463413
 GameObject:
   m_ObjectHideFlags: 0
@@ -795,8 +823,13 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 61b6b410d021cd442b74f8c4dfdaf09f,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 61b6b410d021cd442b74f8c4dfdaf09f,
+        type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 1.3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 61b6b410d021cd442b74f8c4dfdaf09f,
         type: 3}
@@ -811,7 +844,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 61b6b410d021cd442b74f8c4dfdaf09f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.01
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 61b6b410d021cd442b74f8c4dfdaf09f,
         type: 3}
@@ -853,6 +886,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 61b6b410d021cd442b74f8c4dfdaf09f,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 85053364afe82334d9e4df0da5364371, type: 2}
     - target: {fileID: 919132149155446097, guid: 61b6b410d021cd442b74f8c4dfdaf09f,
         type: 3}
       propertyPath: m_Name
@@ -861,7 +899,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 61b6b410d021cd442b74f8c4dfdaf09f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 174743330}
   m_SourcePrefab: {fileID: 100100000, guid: 61b6b410d021cd442b74f8c4dfdaf09f, type: 3}
 --- !u!1001 &244008092
 PrefabInstance:
@@ -1759,7 +1801,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 80
+  m_Constraints: 64
   m_CollisionDetection: 2
 --- !u!4 &488718212
 Transform:
@@ -4417,7 +4459,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 6ad4405d61a141942a021e58354ded0c,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071067
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6ad4405d61a141942a021e58354ded0c,
         type: 3}
@@ -4427,17 +4469,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 6ad4405d61a141942a021e58354ded0c,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6ad4405d61a141942a021e58354ded0c,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6ad4405d61a141942a021e58354ded0c,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6ad4405d61a141942a021e58354ded0c,
         type: 3}
