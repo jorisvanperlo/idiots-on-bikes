@@ -181,6 +181,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 452845707996361441, guid: 002e629954358a741a91c52fab546e14,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.005
+      objectReference: {fileID: 0}
+    - target: {fileID: 452845707996361441, guid: 002e629954358a741a91c52fab546e14,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.146
+      objectReference: {fileID: 0}
+    - target: {fileID: 452845707996361441, guid: 002e629954358a741a91c52fab546e14,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 002e629954358a741a91c52fab546e14,
         type: 3}
       propertyPath: m_Name
@@ -205,6 +220,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ab8108b41f331f347a580a5f5d65b5a4,
     type: 3}
   m_PrefabInstance: {fileID: 2068165377}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &260200052 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 29cf3d35bf8e82f4abdae6598843366d,
+    type: 3}
+  m_PrefabInstance: {fileID: 545512029}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &400552747 stripped
 Transform:
@@ -374,7 +395,11 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1432514141}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 29cf3d35bf8e82f4abdae6598843366d,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1341630036}
   m_SourcePrefab: {fileID: 100100000, guid: 29cf3d35bf8e82f4abdae6598843366d, type: 3}
 --- !u!4 &660166433 stripped
 Transform:
@@ -518,6 +543,27 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 545512029}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1341630036
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 260200052}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 276cb92b5bd121642858e79ab53e4d75, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1346973390
 GameObject:
   m_ObjectHideFlags: 0
