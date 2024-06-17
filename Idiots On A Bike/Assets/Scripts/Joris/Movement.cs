@@ -28,16 +28,12 @@ public class Movement : MonoBehaviour
     public bool raceStart;
     public float timer;
     
-    public float rayLength;
-    public float airThick;
-    public float groundThick;
-    public float airBoost;
-    public float airSpeedIncrease;
+ 
    
 
     private void FixedUpdate()
     {
-        rb.AddForce(transform.forward * accForce * boostForce * airBoost * Time.deltaTime);
+        rb.AddForce(transform.forward * accForce * boostForce * Time.deltaTime);
     }
 
 
@@ -94,17 +90,6 @@ public class Movement : MonoBehaviour
         if (isBoosting == true) 
         {
             boost -= boostDrainSpeed * Time.deltaTime;
-        }
-        RaycastHit hit;
-        if (Physics.Raycast(transform.position,-transform.up,out hit, rayLength))
-        {
-            rb.mass = groundThick;
-            airBoost = 1.0f;
-        }
-        else
-        {
-            rb.mass = airThick;
-            airBoost = airSpeedIncrease;
         }
     }
 
