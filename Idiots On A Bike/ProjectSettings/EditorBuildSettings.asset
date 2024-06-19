@@ -9,9 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/Sora's Part V3/Scenes/UI.unity
+    path: Assets/Scenes/UI.unity
     guid: 67bd26898766e4a72ba428eb29471aa3
   - enabled: 1
-    path: Assets/Sora's Part V3/Scenes/UI Starry.unity
+    path: Assets/Scenes/UI Starry.unity
     guid: d5be9d2328a0c4577a287853d2c325a2
   m_configObjects: {}
