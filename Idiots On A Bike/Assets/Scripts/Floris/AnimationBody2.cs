@@ -10,12 +10,18 @@ public class AnimationBody2 : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.A))
         {
             bike.GetComponent<Animator>().Play("Steer Left Body");
-            //bike.GetComponent<Animator>().Play("Steer Left");
+        }
+        if (Input.GetKeyUp(KeyCode.A))
+        {
+            bike.GetComponent<Animator>().Play("Steer Left Body Reverse");
         }
         if (Input.GetKeyDown(KeyCode.D))
         {
             bike.GetComponent<Animator>().Play("Steer Right Body");
-            //bike.GetComponent<Animator>().Play("Steer Right");
+        }
+        if (Input.GetKeyUp(KeyCode.D))
+        {
+            bike.GetComponent<Animator>().Play("Steer Right Body Reverse");
         }
     }
 }
