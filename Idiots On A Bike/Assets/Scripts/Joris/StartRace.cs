@@ -6,8 +6,7 @@ public class StartRace : MonoBehaviour
 {
     public float timer;
     public Behaviour fiets;
-    public Behaviour cam;
-    public Behaviour camHolder;
+    public Behaviour fiets2;
     public Behaviour start;
 
     public Behaviour P1FWheel;
@@ -23,8 +22,7 @@ public class StartRace : MonoBehaviour
         if (timer >= 5)
         {
           fiets.enabled = true;
-          cam.enabled = true;
-          camHolder.enabled = true;
+          fiets2.enabled = true;
           P1FWheel.enabled = true;
           P1BWheel.enabled = true;
           P2FWheel.enabled = true;

@@ -53,7 +53,6 @@ public class CamHolder : MonoBehaviour
             startPos = realOffSet;
             startRot = transform.rotation;
             newRot = Quaternion.Euler(0, -90, 0) * startRot;
-            
         }
     }
     public void RightTurn()
@@ -65,7 +64,6 @@ public class CamHolder : MonoBehaviour
             startPos = realOffSet;
             startRot = transform.rotation;
             newRot = Quaternion.Euler(0, 90, 0) * startRot;
-
         }
     }
 }

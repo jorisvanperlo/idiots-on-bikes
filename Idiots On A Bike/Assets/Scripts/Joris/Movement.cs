@@ -21,6 +21,7 @@ public class Movement : MonoBehaviour
     public bool isBoosting;
     public float requireBoost;
     public bool canBoost;
+    public float maxBoost;
 
     public GameObject finish;
 
@@ -50,7 +51,10 @@ public class Movement : MonoBehaviour
 
         if (isBoosting == false)
         {
-            boost += boostRefillSpeed * Time.deltaTime;
+            if (boost <= maxBoost)
+            {
+                boost += boostRefillSpeed * Time.deltaTime;
+            }
         }
         if (boost > requireBoost)
         {
@@ -59,13 +63,13 @@ public class Movement : MonoBehaviour
 
         if (boost > 0 && canBoost == true)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.W))
             {
                boostForce = boostForceWhenActive;
                isBoosting = true;
                 cam.transform.GetComponent<CamFOV>().IncreaseFov();
             }
-            if (Input.GetKeyUp(KeyCode.Space))
+            if (Input.GetKeyUp(KeyCode.W))
             {
                 boostForce = 1.0f;
                 isBoosting = false;
