@@ -5,6 +5,7 @@ using UnityEngine;
 public class StartRace : MonoBehaviour
 {
     public float timer;
+    public GameObject finish;
     public Behaviour fiets;
     public Behaviour fiets2;
     public Behaviour start;
@@ -28,7 +29,13 @@ public class StartRace : MonoBehaviour
           P2FWheel.enabled = true;
           P2BWheel.enabled = true;
 
-          start.enabled = false;
+         
+        }
+
+        if (timer >= 30)
+        {
+            finish.SetActive(true);
+            start.enabled = false;
         }
     }
 }

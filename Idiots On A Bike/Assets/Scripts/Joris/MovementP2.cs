@@ -30,7 +30,6 @@ public class MovementP2 : MonoBehaviour
 
 
 
-
     private void FixedUpdate()
     {
         rb.AddForce(transform.forward * accForce * boostForce * Time.deltaTime);
@@ -39,10 +38,7 @@ public class MovementP2 : MonoBehaviour
 
     void Update()
     {
-        if (finished == false)
-        {
-            timer += 1.0f * Time.deltaTime;
-        }
+        timer += 1.0f * Time.deltaTime;
 
         rot.y = Input.GetAxis("Horizontal2");
         transform.Rotate(rot * sence * Time.deltaTime);
@@ -110,8 +106,8 @@ public class MovementP2 : MonoBehaviour
         }
         if (Hit.gameObject.tag == ("Finish"))
         {
-            finish.transform.GetComponent<FinishLine>().P1Finished();
+            finish.transform.GetComponent<FinishLine>().P2Finished();
         }
-
+     
     }
 }

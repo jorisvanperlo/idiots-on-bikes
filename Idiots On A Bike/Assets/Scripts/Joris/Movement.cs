@@ -9,7 +9,8 @@ public class Movement : MonoBehaviour
     public Vector3 rot;
     public GameObject cam;
     public GameObject camHolder;
-   
+    public GameObject finish;
+
     public float accForce;
     public float sence;
 
@@ -23,14 +24,12 @@ public class Movement : MonoBehaviour
     public bool canBoost;
     public float maxBoost;
 
-    public GameObject finish;
+  
 
     public bool finished;
     public bool raceStart;
     public float timer;
-    
- 
-   
+
 
     private void FixedUpdate()
     {
@@ -40,10 +39,7 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
-        if (finished == false)
-        {
-            timer += 1.0f * Time.deltaTime;
-        }
+         timer += 1.0f * Time.deltaTime;
 
         rot.y = Input.GetAxis("Horizontal");
         transform.Rotate(rot * sence * Time.deltaTime);
