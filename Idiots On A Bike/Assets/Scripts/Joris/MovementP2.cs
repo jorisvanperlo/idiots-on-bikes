@@ -8,6 +8,7 @@ public class MovementP2 : MonoBehaviour
     public Vector3 rot;
     public GameObject cam;
     public GameObject camHolder;
+    public GameObject finish;
 
     public float accForce;
     public float sence;
@@ -22,7 +23,7 @@ public class MovementP2 : MonoBehaviour
     public bool canBoost;
     public float maxBoost;
 
-    public GameObject finish;
+    
 
     public bool finished;
     public bool raceStart;
