@@ -13,6 +13,7 @@ public class MainMenu : MonoBehaviour
     void Start()
     {
         ShowPreMenu();
+        Time.timeScale = 1.0f;
     }
 
     public void ShowLevelSelectMenu()

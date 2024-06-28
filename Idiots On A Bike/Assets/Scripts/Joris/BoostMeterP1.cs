@@ -10,6 +10,6 @@ public class BoostMeterP1 : MonoBehaviour
 
     void Update()
     {
-        scroll.size = p1.GetComponent<Movement>().boost / 20.0f;
+        scroll.size = p1.GetComponent<Movement>().boost / 10;
     }
 }

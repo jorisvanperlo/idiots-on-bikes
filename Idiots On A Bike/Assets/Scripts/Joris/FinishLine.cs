@@ -27,9 +27,26 @@ public class FinishLine : MonoBehaviour
     public GameObject fire2;
     public GameObject fire3;
     public GameObject fire4;
+
+    public bool p1Win;
+    public bool p2Win;
+
+    public GameObject p1WinScreen;
+    public GameObject p1LoseScreen;
+    public GameObject p2WinScreen;
+    public GameObject p2LoseScreen;
+
+    public GameObject menu;
+
+
     void Start()
     {
-        
+        p1WinScreen.SetActive(false);
+        p2WinScreen.SetActive(false);
+        p1LoseScreen.SetActive(false);
+        p2LoseScreen.SetActive(false);
+
+        menu.SetActive(false);
     }
 
     
@@ -49,8 +66,18 @@ public class FinishLine : MonoBehaviour
         P1FWheel.enabled = false;
         P1BWheel.enabled = false;
 
-        fire1.SetActive(true);
-        fire2.SetActive(true);
+        fire1.SetActive(false);
+        fire2.SetActive(false);
+
+        if (P2Finish == false)
+        {
+            p1Win = true;
+            p1WinScreen.SetActive(true);
+        }
+        else
+        {
+            p1LoseScreen.SetActive (true);
+        }
     }
     public void P2Finished()
     {
@@ -59,11 +86,23 @@ public class FinishLine : MonoBehaviour
         P2BWheel.enabled = false;
         fiets2.enabled = false;
 
-        fire3.SetActive(true);
-        fire4.SetActive(true);
+        fire3.SetActive(false);
+        fire4.SetActive(false);
+
+
+        if (P1Finish == false)
+        {
+            p2Win = true;
+            p2WinScreen.SetActive(true);
+        }
+        else
+        {
+            p2LoseScreen.SetActive(true);
+        }
     }
     public void RaceOver()
     {
+        menu.SetActive(true);
         P1EndTime = P1.GetComponent<Movement>().timer;
         P2EndTime = P2.GetComponent<MovementP2>().timer;
     }

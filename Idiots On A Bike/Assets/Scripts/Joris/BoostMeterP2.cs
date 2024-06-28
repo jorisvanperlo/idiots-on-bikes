@@ -10,6 +10,6 @@ public class BoostMeterP2 : MonoBehaviour
     
     void Update()
     {
-        scroll.size = p2.GetComponent<MovementP2>().boost / 20.0f;
+        scroll.size = p2.GetComponent<MovementP2>().boost / 10;
     }
 }
