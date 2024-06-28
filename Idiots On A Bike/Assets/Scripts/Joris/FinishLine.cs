@@ -22,6 +22,11 @@ public class FinishLine : MonoBehaviour
 
     public Behaviour P2FWheel;
     public Behaviour P2BWheel;
+
+    public GameObject fire1;
+    public GameObject fire2;
+    public GameObject fire3;
+    public GameObject fire4;
     void Start()
     {
         
@@ -34,6 +39,7 @@ public class FinishLine : MonoBehaviour
         {
             RaceOver();
             raceOver = true;
+
         }
     }
     public void P1Finished()
@@ -42,8 +48,9 @@ public class FinishLine : MonoBehaviour
         fiets.enabled = false;
         P1FWheel.enabled = false;
         P1BWheel.enabled = false;
-  
 
+        fire1.SetActive(true);
+        fire2.SetActive(true);
     }
     public void P2Finished()
     {
@@ -51,6 +58,9 @@ public class FinishLine : MonoBehaviour
         P2FWheel.enabled = false;
         P2BWheel.enabled = false;
         fiets2.enabled = false;
+
+        fire3.SetActive(true);
+        fire4.SetActive(true);
     }
     public void RaceOver()
     {

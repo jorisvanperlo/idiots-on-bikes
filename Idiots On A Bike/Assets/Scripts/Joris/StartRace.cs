@@ -16,10 +16,22 @@ public class StartRace : MonoBehaviour
     public Behaviour P2FWheel;
     public Behaviour P2BWheel;
 
+    public GameObject fire1;
+    public GameObject fire2;
+    public GameObject fire3;
+    public GameObject fire4;
+
     void Update()
     {
         timer += 1.0f * Time.deltaTime;
 
+        if (timer >= 2)
+        {
+            fire1.SetActive(true);
+            fire2.SetActive(true);
+            fire3.SetActive(true);
+            fire4.SetActive(true);
+        }
         if (timer >= 5)
         {
           fiets.enabled = true;
@@ -31,6 +43,7 @@ public class StartRace : MonoBehaviour
 
          
         }
+
 
         if (timer >= 30)
         {
